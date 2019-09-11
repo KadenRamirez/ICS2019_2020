@@ -1,7 +1,0 @@
-Kaden Ramirez
-I'm in Computer Science
-<<<<<<< HEAD
-So Are Others
-=======
-So are Others too
->>>>>>> 7a6a5b1d2963b977e2034ea37736dac43536a7c6
