@@ -44,7 +44,7 @@ def load(filename):
     out[img[:,:,1]>150]=liveCell
     return out
     
-#recreates CA using the rules of conways game of life
+#recreates the world using the rules of conways game of life
 def iterate(world):
     newWorld=world*1
     kernel=np.int16([[1,1,1],
