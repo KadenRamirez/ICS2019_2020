@@ -29,7 +29,7 @@ to identify as they overlap in almost every area.
 
 #shows the graphs for Iris Setosa, Iris Versicolour, Iris Virginica
 sns.pairplot( data=data,vars=(0,1,2,3), hue=4 )
-# ~ plt.show()
+plt.show()
 
 #turns dataset into an array
 data=np.array(data)
