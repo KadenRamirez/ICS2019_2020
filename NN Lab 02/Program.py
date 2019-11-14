@@ -6,6 +6,7 @@ import numpy as np
 from sklearn.utils import shuffle
 from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import cross_validate
+from sklearn.preprocessing import normalize
 
 
 #shows the 150 datasets
@@ -29,7 +30,7 @@ to identify as they overlap in almost every area.
 
 #shows the graphs for Iris Setosa, Iris Versicolour, Iris Virginica
 sns.pairplot( data=data,vars=(0,1,2,3), hue=4 )
-plt.show()
+# ~ plt.show()
 
 #turns dataset into an array
 data=np.array(data)
@@ -42,6 +43,9 @@ y=data[:,4] #This gets all the rows and the 5th column.
 
 #shuffles X and y
 X,y=shuffle(X,y,random_state=0)
+print(X[:])
+x=normalize(X)
+print(X[:4])
 
 """
 #8 answers: if you print the dataset it before the shuffle it is different then
@@ -59,11 +63,17 @@ testX=X[100:151]
 testy=y[100:151]
 
 #builds the NN
-clf = MLPClassifier(hidden_layer_sizes=[3,3], random_state=42, max_iter =1336)
+# ~ for layerSize in range(1,12):
+clf = MLPClassifier(hidden_layer_sizes=[2,2], random_state=42, max_iter =1336)
 clf.fit(trainX, trainy)
+trainScore = clf.score(trainX,trainy)
+testScore = clf.score(testX,testy)
+# ~ print("%d, %f, %f"%(layerSize,trainScore,testScore))
+# ~ print(dir(clf))
 
 #prints how our nodes are wieghted
 print(clf.coefs_)
+print(clf.intercepts_)
 
 #prints the predictions for testX
 prediction=clf.predict(testX)
