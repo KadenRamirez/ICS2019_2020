@@ -1,0 +1,10 @@
+	This project was done in anaconda version 3.8. The libraries include numpy 1.16, sci-kit,
+pandas, matplotlib.pyplot, and seaborn.The data was then retrieved from
+https://catalog.data.gov/dataset/motor-vehicle-crashes-case-information-beginning-2009.
+The needed data was then converted to numerical values while everything else was deleted.
+The data was then normalized using the normalize function. The data was scaled so that no 
+value exceeded 11.0. The Nnural network was then trained on half of the dataset and tested on the
+rest. The hidden layer size was 12 nodes in the first hidden layer and 6 nodes in the second
+hidden layer. The random_state was set to 0, the max_iter was set to 10000, the cv was set
+to 4. To verify the test results the percentage correct was compared to the cross validation results.
+This was accomplished by usign the clf.score function and the cross validation function.

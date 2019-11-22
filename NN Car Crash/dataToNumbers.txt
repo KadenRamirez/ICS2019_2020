@@ -1,0 +1,119 @@
+Crash descriptor:
+	Injury Accident = 0.0
+	Property Damage Accident = 1.0
+	Prperty Damage & Injury Accident = 2.0
+
+Time:
+	AM = 1.0
+	PM = 3.0
+
+Date:
+	only the month + .0
+
+Days of the week:
+	Monday = 0.0
+	Tuesday = 1.0
+	Wednesday = 2.0
+	Thursday = 3.0
+	Friday = 4.0
+	Saturday = 5.0
+	Sunday = 6.0
+
+Police report:
+	Yes = 1.0
+	No = 2.0
+
+Lighting Conditions:
+	Dawn = 0.0
+	Daylight = 1.0
+	Dark-Road Unlighted = 2.0
+	Unknown = 3.0
+	Dusk = 4.0
+	Dark-Road Lighted = 5.0
+
+Collision Type Descriptor:
+	OTHER = 0.0 
+	RIGHT ANGLE = 1.0
+	OVERTAKING = 2.0
+	REAR END = 3.0
+	Unknown = 4.0
+	LEFT TURN= 5.0
+	RIGHT TURN = 6.0
+	HEAD ON = 7.0
+	SIDESWIPE = 8.0
+
+Road Descriptor:
+	Straight and Level = 0.0
+	Unknown = 1.0
+	Straight and Grade = 2.0
+	Curve and Level = 3.0
+	Straight at Hill Crest = 4.0
+	Curve and Grade = 5.0
+	Curve at Hill Crest = 6.0
+
+Weather Conditions:
+	Clear = 0.0
+	Rain = 1.0
+	Cloudy = 2.0
+	Snow = 3.0
+	Unknown = 4.0
+
+Traffic Control Device:
+	None = 0.0
+	Unknown = 1.0
+	Traffic Signal = 2.0
+	Stop Sign = 3.0
+	Yield Sign = 4.0
+	No Passing Zone = 5.0
+	School Zone = 6.0
+
+Road Surface Conditions:
+	Dry = 0.0
+	Wet = 1.0
+	Unknown = 2.0
+	Snow/Ice = 3.0 already done
+	Slush = 4.0
+
+Pedestrain Bicyclist Action:
+	Crossing, No Signal or Crosswalk = 0.0
+	Not Applicable = 1.0
+	Crossing, With Signal = 2.0
+	Going to/From Stopped School Bus = 3.0
+	Not in Roadway (Indicate) = 4.0
+	Crossing, Against Signal = 5.0
+	Other Actions in Roadway = 6.0
+	Crossing, No Signal, Marked Crosswalk = 7.0
+	Unknown = 8.0 *
+	Riding/Walking/Skating Along Highway Against Traffic = 9.0
+
+Event Descriptor:
+	Pedestrian, Collision With = 0.0
+	Other Motor Vehicle, Collision With = 0.5
+	Deer = 1.0
+	Animal, Collision With = 1.5
+	Other Object (Not Fixed)*, Collision With = 2.0
+	Bicyclist, Collision With = 2.5
+	Other*, Non-Collision = 3.0
+	Tree, Collision With Fixed Object = 3.5
+	Other Fixed Object*, Collision With Fixed Object = 4.0
+	Building/Wall, Collision With Fixed Object = 4.5
+	Fire/Explosion, Non-Collision = 5.0
+	Barrier, Collision With Fixed Object = 5.5
+	Overturned, Non-Collision = 6.0
+	Culver/Head Wall, Collision With Fixed Object = 6.5
+	Curbing, Collision With Fixed Object = 7.0
+	Ran Off Roadway Only, Non-Collision = 7.5
+	Fence, Collision With Fixed Object = 8.0
+	Sign Post, Collision With Fixed Object = 8.5
+	Fire Hydrant, Collision With Fixed Object = 9.0
+	Guide Rail - Not At End, Collision With Fixed Object = 9.5
+	Earth Embankment/Rock Cut/Ditch, Collision With Fixed Object = 10.0
+	Light Support/Utility Pole, Collision With Fixed Object = 10.5
+	Crash Cushion, Collision With Fixed Object = 11.0
+
+Number of Vehicles Involved:
+	the number that's already there
+
+
+
+
