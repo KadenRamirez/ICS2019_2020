@@ -51,5 +51,8 @@ print(clf.score(trainX,trainy))
 print(clf.score(testX,testy))
 
 #cross validates the results
-cv_results = cross_validate(clf, X, y, cv=4)
-print(cv_results)
+from sklearn.model_selection import GridSearchCV
+parameters = {'hidden_layer_sizes':([3],[10],[3,3], [3,3,3]), 'activation': ('identity', 'logistic','tanh','relu'), "solver":('lbfgs','agd', 'adam')} 
+gs = GridSearchCV(clf, parameters)
+gs.fit(X,y)
+print(gs.best_estimator_)
