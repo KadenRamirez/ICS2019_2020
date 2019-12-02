@@ -5,7 +5,7 @@ Crash descriptor:
 
 Time:
 	AM = 1.0
-	PM = 3.0
+	PM = 2.0
 
 Date:
 	only the month + .0
