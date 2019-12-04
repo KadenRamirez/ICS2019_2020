@@ -1,0 +1,4 @@
+For my project I would like to create a program in q#. It will
+probably something small such as generating random numbers. I
+think the biggest hurdle will be learning the q# language. 
+However it could be understanding what the code is actually doing.
